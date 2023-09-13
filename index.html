@@ -3,54 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <title>Devoir à la maison</title>
 </head>
 <body>
-    <div class="container">
+    <div>
 		<header>
-			<div>
-				<img src="img/logo_msp_Part.png" width="365" height="73">
+			<div class="py-3">
+				<img src="img/logo_msp_Part.png" alt="logo mariane" class="img-fluid">
 			</div>
 
 			<div role="search" id="recherche_conteneur">
-				<form action="https://mon.service-public.fr/portail/faces/jsp/liste_res_tout.jsp" method="get">
-					<input type="text" name="fullText" id="rechercheInput"value="Rechercher" title="Rechercher">
-					<input type="submit" value="ok" title="Lancer la recherche"   id="ok_recherche">
+				<form class="input-group">
+					<input type="text" class="form-control rounded" name="fullText" id="rechercheInput" placeholder="Rechercher" title="Rechercher">
+					<input type="submit" class="btn btn-outline-secondary ms-2 rounded" value="ok" title="Lancer la recherche"   id="ok_recherche">
 				</form>
 			</div>				
 		</header>
 
-		<nav>
-			<ul>
-				<li><a href="/jsp/en_savoir_plus_mon_tableau_de_bord.jsp">Mon tableau de bord</a>
-					<ul>
-						<li><a href="jsp/mes_liaisons.jsp">&gt; Mes liaisons de comptes</a></li>
-						<li><a href="jsp/mon_calendrier.jsp">&gt; Mon calendrier</a></li>
-						<li><a href="jsp/mon_suivi.jsp">&gt; Mon suivi</a></li>
+		<nav class="my-3">
+			<ul class="nav flex-column">
+				<li class="dropdown-toggle btn text-primary py-2 border-bottom border-primary rounded-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">Mon tableau de bord
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="#">&gt; Mes liaisons de comptes</a></li>
+						<li><a class="dropdown-item" href="#">&gt; Mon calendrier</a></li>
+						<li><a class="dropdown-item" href="#">&gt; Mon suivi</a></li>
 					</ul> 
 					<span class="flecheActive"></span>
 				</li>
-				<li><a href="/jsp/en_savoir_plus_mes_documents.jsp">Mes documents</a>
-					<ul>
-						<li><a href="jsp/msp_documents.jsp">&gt; Mon porte-documents</a></li>
-						<li><a href="jsp/bloc_note.jsp">&gt; Mon bloc-notes</a></li>
+				<li class="dropdown-toggle btn text-primary rounded-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">Mes documents
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="jsp/msp_documents.jsp">&gt; Mon porte-documents</a></li>
+						<li><a class="dropdown-item" href="jsp/bloc_note.jsp">&gt; Mon bloc-notes</a></li>
 					</ul> 
 				</li>	
-				<li><a href="jsp/en_savoir_plus_mon_profils.jsp">Mon profil</a>
-					<ul>
-						<li><a href="jsp/mon_etat_civil.jsp">&gt; Mes coordonnées</a></li>
-						<li><a href="jsp/ma_communaute.jsp">&gt; Mes contacts</a></li>
-						<li><a href="jsp/mes_options.jsp">&gt; Mes options</a></li>
+				<li class="dropdown-toggle btn text-primary rounded-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">Mon profil
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="jsp/mon_etat_civil.jsp">&gt; Mes coordonnées</a></li>
+						<li><a class="dropdown-item" href="jsp/ma_communaute.jsp">&gt; Mes contacts</a></li>
+						<li><a class="dropdown-item" href="jsp/mes_options.jsp">&gt; Mes options</a></li>
 					</ul> 
 				</li>
-				<li><a href="jsp/en_savoir_plus_catalogue_des_services.jsp">Catalogue des services</a>
-					<ul>
-						<li><a href="jsp/les_demarches.jsp?menu=true">&gt; Les démarches</a></li>
-						<li><a href="jsp/les_formulaires.jsp?menu=true">&gt; Les formulaires CERFA</a></li>
-						<li><a href="hjsp/les_partenaires.jsp?menu=true">&gt; Les organismes partenaires</a></li>
-						<li><a href="http://lannuaire.service-public.fr/" target="_blank">&gt; L'annuaire de l'administration</a></li>
-						<li><a href="http://www.service-public.fr/" target="_blank">&gt; Le guide des droits et démarches</a></li>
+				<li class="dropdown-toggle btn text-primary rounded-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">Catalogue des services
+					<ul class="dropdown-menu">
+						<li><a class="dropdown-item" href="jsp/les_demarches.jsp?menu=true">&gt; Les démarches</a></li>
+						<li><a class="dropdown-item" href="jsp/les_formulaires.jsp?menu=true">&gt; Les formulaires CERFA</a></li>
+						<li><a class="dropdown-item" href="hjsp/les_partenaires.jsp?menu=true">&gt; Les organismes partenaires</a></li>
+						<li><a class="dropdown-item" href="http://lannuaire.service-public.fr/" target="_blank">&gt; L'annuaire de l'administration</a></li>
+						<li><a class="dropdown-item" href="http://www.service-public.fr/" target="_blank">&gt; Le guide des droits et démarches</a></li>
 					</ul> 
 				</li>
 			</ul>
@@ -157,5 +158,6 @@
 			</div>
 		</footer>
 	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
 </body>
 </html>
