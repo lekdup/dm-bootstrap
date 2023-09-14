@@ -1,0 +1,22 @@
+{
+  "name": "dm-bootstrap",
+  "version": "1.0.0",
+  "description": "devoir maison pour comprendre bootstrap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lekdup/dm-bootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lekdup/dm-bootstrap/issues"
+  },
+  "homepage": "https://github.com/lekdup/dm-bootstrap#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
+}

@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+//custom variables
+$primary: #0E5F96;
+$danger: #9C2F03;
+$gradient: linear-gradient(0.50turn, #CBDBE6 -30%, #fff 30%, #CBDBE6 100%);
+
+// import the functions & vaiables from the bootstrap so i can merge with my own
+@import "../node_modules/bootstrap/scss/_functions.scss";
+@import "../node_modules/bootstrap/scss/_variables.scss";
+
+$custom-theme-colors: (
+    "footer-blue": #008BD2,
+    "footer-darker": #00327A,
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+
+//import bootstrap
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+.bg-light-blue {
+    background-color: #F1F6F8;
+}
