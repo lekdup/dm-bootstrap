@@ -1,8 +1,17 @@
 # dm-bootstrap
 devoir maison pour comprendre bootstrap
  ## installer bootstrap via npm et pas CDN
- Installation avec NPM facilite la personalisation des couleur, taille etc...
+Bootstrap intégré via CDN au lieu d'installer avec node car plus léger
 
- à la place de changer les variables directement dans le dossier node_modules, je change dans mon main.scss pour être plus flexible
+## Customize CSS
 
+j'ai utilisé grid pour navbar et section pour avoir la même largeur pour tous les blocs.
+
+Dans le footer, flexbox à la place de grid layout pout l'effet flex wrap.
+
+## Breakpoints
+
+J'ai plusieur niveau de breakpoints : 
+- min-width 770px pour ipad 
+- min-width 1025px pour desktop 
  
