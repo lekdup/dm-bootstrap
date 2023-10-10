@@ -55,15 +55,20 @@ a > span {
     color: #43befe;
 }
 
+
 /* .width-1200 {
     max-width: 1200px;
     margin: auto;
 } */
 
-/* .width-1400 {
-    max-width: 1400px;
-    margin: auto;
-} */
+.width-1400 {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer {
+    margin-top: auto;
+}
 
 @media (min-width: 770px) {
     header {
