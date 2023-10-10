@@ -55,15 +55,15 @@ a > span {
     color: #43befe;
 }
 
-.width-1200 {
+/* .width-1200 {
     max-width: 1200px;
     margin: auto;
-}
+} */
 
-.width-1400 {
+/* .width-1400 {
     max-width: 1400px;
     margin: auto;
-}
+} */
 
 @media (min-width: 770px) {
     header {
